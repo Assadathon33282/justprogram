@@ -10,6 +10,8 @@ del "C:\Windows\justprogram.cmd"
 ::findstr "C:\Users\Lenovo\Downloads\justprogram.cmd"
 ::findstr "C:\Users\Lenovo\Desktop\justprogram.cmd"
 
+xcopy "C:\Users\Lenovo\Downloads\justprogram.cmd" "C:\temp"
+::xcopy "C:\Users\Lenovo\Downloads\justprogram.cmd" "C:\Windows"
 xcopy "C:\temp\justprogram.cmd" "C:\Windows"
 start %windir%\justprogram.cmd 
 
