@@ -3,15 +3,15 @@ color 2
 cd /
 git version
 cd "C:\Windows"
+del "C:\temp\justprogram.cmd"
 del "C:\Windows\justprogram.cmd"
 
 ::findstr "C:\temp\justprogram.cmd"
 ::findstr "C:\tmp\justprogram.cmd"
-::findstr "C:\Users\Lenovo\Downloads\justprogram.cmd"
-::findstr "C:\Users\Lenovo\Desktop\justprogram.cmd"
+::findstr "%downloads%\justprogram.cmd"
 
-xcopy "C:\Users\Lenovo\Downloads\justprogram.cmd" "C:\temp"
-::xcopy "C:\Users\Lenovo\Downloads\justprogram.cmd" "C:\Windows"
+xcopy "%downloads%\justprogram.cmd" "C:\temp"
+::xcopy "%downloads%\justprogram.cmd" "C:\Windows"
 xcopy "C:\temp\justprogram.cmd" "C:\Windows"
 start %windir%\justprogram.cmd 
 
